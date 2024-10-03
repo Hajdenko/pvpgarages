@@ -79,7 +79,9 @@ local function saveVehicle(vehicle)
 
         isSavingVehicle = false
     else
-        ShowNotification(locale('save_calm_down'), 'error')
+        if (cache.vehicle) then
+            ShowNotification(locale('save_calm_down'), 'error')
+        end
     end
 end
 
@@ -367,10 +369,14 @@ local function openImpoundVehicles(args)
         local class = GetVehicleClassFromName(GetDisplayNameFromVehicleModel(props.model))
         local fuelLevel = props.fuelLevel or 100.0
 
+        local vehColor = props.color1 and props.color1 or props.color2
+        vehColor.r = vehColor[1]; vehColor.g = vehColor[2]; vehColor.b = vehColor[3]
+
         ---@type ContextMenuArrayItem
         local option = {
             title = locale('vehicle_info', GetVehicleLabel(props.model), props.plate),
             icon = getClassIcon(class),
+            iconColor = ("rgb(%s,%s,%s)"):format(vehColor.r, vehColor.g, vehColor.b),
             progress = class ~= 13 and fuelLevel,
             colorScheme = class ~= 13 and getFuelBarColor(fuelLevel),
             metadata = {
