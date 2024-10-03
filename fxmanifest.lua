@@ -4,7 +4,7 @@ lua54('yes')
 
 author('Hajden - Forked from lunar_garage')
 description('Quick Garage')
-version('1.1.7')
+version('1.1.8')
 
 shared_scripts({
     '@ox_lib/init.lua',
