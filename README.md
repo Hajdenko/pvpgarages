@@ -1,24 +1,30 @@
-# lunar_garage
+```Please, leave a ⭐star⭐ if you like it```
 
-## This repository has been archived due to the lack of motivation to solve reports from users that aren't even able to go through the installation file. Work on this repository has been suspended indefinitely.
+# pvpgarages FORKED FROM [lunar_garage](https://github.com/Lunar-Scripts/lunar_garage)
+Simple Quick Garage script
 
-Highly optimized garage system that allows you to add as many garages as you wish!
+Thank you, LunarScripts
 
-# Features
-* Supports ESX/QBCore
-* Multiple garage/impound types (garage, air, boat)
-* Contract system for selling/transfering vehicles
-* ox_target/qtarget/qb-target support
-* Very low resmon - 0.0ms on idle
-* Installation files included
+## <b>Requirements</b>
+- ox_lib
+- oxmysql
 
-# Dependencies: 
-* es_extended/qb-core
-* ox_lib,
-* esx_vehicleshop/qb-vehicleshop (Can be swapped for vehicleshop of choice by editing server/db.lua)
+## <b>Features</b>
+- Mostly 0.0ms at all times
+![Usage](https://github.com/user-attachments/assets/b6cbc9ff-4dc5-4d95-9598-d9b7564afd8c)
+- Portable Garage Menu (using commad)
+- Portable Vehicle Saving (G)
+- Works with hajden_pdm
+- Tried to make it as customizable as possible, you can suggest something or make a repo
 
-### Preview:
+## <b>Showcase</b>
+![Context Menu](https://github.com/user-attachments/assets/91e9ed09-0164-4b4b-bcd9-13fa61d6876d)
 
-### Documentation: https://lunar-scripts.gitbook.io/lunar-scripts/free-scripts/lunar_garage
 
-### Discord: https://discord.gg/zDK4CHQ56N
+
+## <b>Installation</b>
+- Download pvpgarages
+- Add pvpgarages into your resource folder
+- Add pvpgarages into your server.cfg file or ensure hajden_delvehicles
+- Restart server
+- You might need to paste [this](https://github.com/Lunar-Scripts/lunar_garage/blob/main/install/ESX.md) into your database if it doesnt work.
